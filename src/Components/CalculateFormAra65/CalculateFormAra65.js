@@ -2,14 +2,14 @@ import React from "react";
 
 function CalculateFormAra65(props){
     return(
-        <div className="row">
+        <div className="container row">
             <div className="col-4">
                 <label for="operand1"></label>
-                <input type="text" class="form-control-plaintext" id="operand1" onChange="{props.update}"></input>
+                <input type="text" class="form-control" id="operand1" onChange="{props.update}"></input>
             </div>
             <div className="col-4">
                 <label for="operand2"></label>
-                <input type="text" class="form-control-plaintext" id="operand2" onChange="{props.update}"></input>
+                <input type="text" class="form-control" id="operand2" onChange="{props.update}"></input>
             </div>
             <div className="col-4">
                 <select className="form-control" id="operation" onChange={props.update}>
@@ -18,7 +18,7 @@ function CalculateFormAra65(props){
                     <option></option>
                 </select>
                 </div>
-            <button onClick={props.action}>Go</button>
+            <button className="btn btn-primary" onClick={props.action}>Go</button>
         </div>
     )
 }
