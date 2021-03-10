@@ -18,7 +18,7 @@ function CalculateFormAra65(props){
                     <option></option>
                 </select>
                 </div>
-            <button onClick={props.action}></button>
+            <button onClick={props.action}>Go</button>
         </div>
     )
 }
