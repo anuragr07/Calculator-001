@@ -11,6 +11,14 @@ function CalculateFormAra65(props){
                 <label for="operand2"></label>
                 <input type="text" class="form-control-plaintext" id="operand2" onChange="{props.update}"></input>
             </div>
+            <div className="col-4">
+                <select className="form-control" id="operation" onChange={props.update}>
+                    <option selected>Please select an option</option>
+                    <option value="add">Addition</option>
+                    <option></option>
+                </select>
+                </div>
+            <button onClick={props.action}></button>
         </div>
     )
 }
